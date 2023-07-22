@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+.attribution { color: #fff; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --title-color: hsl(0, 0%, 100%);
+    --text-color: hsl(217, 12%, 63%);
+    --content-color: hsl(216, 12%, 54%);
+    --btn-bg: hsl(213, 19%, 18%);
+    --main-bg: hsl(216, 12%, 8%);
+    --card-bg: #1f2630;
+}
+
+body {
+    padding: 20px;
+    font-family: Overpass;
+    font-weight: 400;
+    background-color: var(--main-bg);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    max-width: 100%;
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.star-icon {
+    width: 50px;
+    height: 50px;
+
+    padding: 15px;
+    box-sizing: border-box;
+
+    background-color: var(--btn-bg);
+    border-radius: 50%;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-text {
+    color: var(--title-color);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.content-text {
+    color: var(--content-color);
+}
+
+.rating-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-btn {
+    color: var(--text-color);
+    background-color: var(--btn-bg);
+    border: none;
+    border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+}
+
+.rating-btn-hover {
+    background-color: var(--orange);
+    color: var(--title-color);
+}
+
+.rating-btn-active, .rating-btn:active {
+    background-color: var(--text-color);
+    color: var(--title-color);
+}
+
+.submit-btn {
+    color: var(--title-color);
+    background-color: var(--orange);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.submit-btn:hover {
+    color: var(--orange);
+    background-color: var(--title-color);
+}
+
+
+
+.result-card {
+    align-items: center;
+}
+
+.result-icon {
+    width: 50%;
+}
+
+.result-text {
+    align-items: center;
+}
+
+.result-text > span {
+    text-align: center;
+}
+
+.ratings-result {
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+
+    background-color: var(--btn-bg);
+    color: var(--orange);
+
+    text-align: center;
+}

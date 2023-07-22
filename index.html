@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="index.css">
+  <script defer src="index.js"></script>
+</head>
+<body>
+
+  <form class="card">
+    <img src="images/icon-star.svg" class="star-icon">
+    <div class="text-container">
+      <span class="title-text">How did we do?</span>
+      <span class="content-text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</span>
+    </div>
+    <div class="rating-container">
+      <button type="button" class="rating-btn">1</button>
+      <button type="button" class="rating-btn">2</button>
+      <button type="button" class="rating-btn">3</button>
+      <button type="button" class="rating-btn">4</button>
+      <button type="button" class="rating-btn">5</button>
+    </div>
+    <button class="submit-btn">SUBMIT</button>
+  </form>
+
+  <div class="card result-card">
+    <img src="images/illustration-thank-you.svg" class="result-icon">
+    <span class="ratings-result"></span>
+    <div class="text-container result-text">
+      <span class="title-text">Thank you!</span>
+      <span class="content-text"> We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</span>
+    </div>
+  </div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/TheoA816">Teeho</a>.
+  </footer>
+</body>
+</html>
